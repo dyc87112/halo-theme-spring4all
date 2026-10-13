@@ -91,29 +91,145 @@ spec:
           label: 主题介绍页完整网址（发布专页后可替换）
           value: https://spring4all.com/
     - group: ads
-      label: 文章侧栏广告
+      label: 广告配置
       formSchema:
         - $formkit: checkbox
           name: enabled
-          label: 在文章目录下显示 AdSense 广告
+          label: 启用主题广告（总开关）
           value: false
         - $formkit: text
           name: client_id
-          label: AdSense 发布商 ID（data-ad-client）
+          label: AdSense 发布商 ID（所有广告位共用）
           placeholder: ca-pub-xxxxxxxxxxxxxxxx
           value: ""
+        - $formkit: checkbox
+          name: preview
+          label: 布局预览模式（所有已开启位置显示占位，不请求 Google 广告）
+          value: false
+        - $el: h3
+          children: "文章目录下方"
+        - $formkit: checkbox
+          name: sidebar_enabled
+          label: 显示文章目录下方广告
+          value: true
         - $formkit: text
           name: slot_id
           label: 广告单元 ID（data-ad-slot）
-          placeholder: 从 AdSense 展示广告单元代码中获取
           value: ""
+        - $formkit: select
+          name: post_sidebar_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
         - $formkit: checkbox
           name: show_mobile
-          label: 手机和平板也显示广告（位于目录与正文之间）
+          label: 手机和平板也显示此广告位
           value: false
+        - $el: h3
+          children: "首页列表上方"
         - $formkit: checkbox
-          name: preview
-          label: 布局预览模式（只显示占位，不请求 Google 广告）
+          name: home_top_enabled
+          label: 显示首页列表上方广告
+          value: false
+        - $formkit: text
+          name: home_top_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          name: home_top_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          name: home_top_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h3
+          children: "首页侧栏"
+        - $formkit: checkbox
+          name: home_sidebar_enabled
+          label: 显示首页侧栏广告
+          value: false
+        - $formkit: text
+          name: home_sidebar_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          name: home_sidebar_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          name: home_sidebar_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h3
+          children: "文章正文上方"
+        - $formkit: checkbox
+          name: post_top_enabled
+          label: 显示文章正文上方广告
+          value: false
+        - $formkit: text
+          name: post_top_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          name: post_top_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          name: post_top_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h3
+          children: "文章末尾"
+        - $formkit: checkbox
+          name: post_bottom_enabled
+          label: 显示文章末尾广告
+          value: false
+        - $formkit: text
+          name: post_bottom_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          name: post_bottom_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          name: post_bottom_show_mobile
+          label: 手机和平板也显示此广告位
           value: false
     - group: seo
       label: 分享与搜索引擎

@@ -90,36 +90,37 @@
     const headings=$$('h2,h3',content), toc=$('[data-toc]');
     if(toc){headings.forEach((heading,index)=>{if(!heading.id){let id=`section-${index+1}`;while(document.getElementById(id))id+='-s';heading.id=id;}const li=document.createElement('li');if(heading.tagName==='H3')li.className='sub';const link=document.createElement('a');link.href='#'+encodeURIComponent(heading.id);link.textContent=heading.textContent;li.append(link);toc.append(li);});const aside=$('.reading-aside'),panel=$('.toc-panel'),ad=$('[data-sidebar-ad]',aside || document);syncReadingSidebar=()=>{const hasAd=ad && !ad.hidden && getComputedStyle(ad).display!=='none';if(panel)panel.hidden=!headings.length;if(aside){aside.hidden=!headings.length && !hasAd;aside.classList.toggle('reading-aside-with-ad',Boolean(hasAd));}$('.reading-layout')?.classList.toggle('reading-layout-without-toc',!headings.length && !hasAd);};syncReadingSidebar();matchMedia('(max-width: 820px)').addEventListener('change',syncReadingSidebar);if(headings.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){$$('a',toc).forEach(a=>a.classList.toggle('active',decodeURIComponent(a.hash.slice(1))===entry.target.id));}}},{rootMargin:'-5% 0px -65% 0px'});headings.forEach(h=>observer.observe(h));}}
   }
-  const sidebarAd = $('[data-sidebar-ad]');
-  const adUnit = sidebarAd && $('[data-theme-ad]', sidebarAd);
-  if (adUnit) {
-    const collapseAd = () => {sidebarAd.hidden = true; syncReadingSidebar();};
+  $$('[data-theme-ad-container]').forEach(container => {
+    const unit = $('[data-theme-ad]', container);
+    if (!unit) return; // Preview mode never requests Google ads.
+    const collapseAd = () => {container.hidden = true; syncReadingSidebar();};
     const statusObserver = new MutationObserver(() => {
-      if (adUnit.dataset.adStatus === 'unfilled') {collapseAd(); statusObserver.disconnect();}
+      if (unit.dataset.adStatus === 'unfilled') {collapseAd(); statusObserver.disconnect();}
     });
-    statusObserver.observe(adUnit, {attributes: true, attributeFilter: ['data-ad-status']});
+    statusObserver.observe(unit, {attributes: true, attributeFilter: ['data-ad-status']});
     const visibilityObserver = new IntersectionObserver(entries => {
-      if (!entries.some(entry => entry.isIntersecting) || sidebarAd.getBoundingClientRect().width === 0) return;
+      if (!entries.some(entry => entry.isIntersecting) || container.getBoundingClientRect().width === 0) return;
       visibilityObserver.disconnect();
-      if (adUnit.dataset.adsbygoogleStatus || adUnit.dataset.themeAdInitialized) return;
-      adUnit.dataset.themeAdInitialized = 'true';
+      if (unit.dataset.adsbygoogleStatus || unit.dataset.themeAdInitialized) return;
       let script = [...document.scripts].find(el => {
         try {const url = new URL(el.src);return url.hostname === 'pagead2.googlesyndication.com' && url.pathname === '/pagead/js/adsbygoogle.js';} catch (_) {return false;}
       });
+      if (script?.dataset.themeAdsError === 'true') {collapseAd(); return;}
       if (!script) {
         script = document.createElement('script');
         script.async = true;
         script.crossOrigin = 'anonymous';
-        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(adUnit.dataset.adClient);
-        script.addEventListener('error', collapseAd, {once: true});
-        document.head.append(script);
-      } else {
-        script.addEventListener('error', collapseAd, {once: true});
+        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(unit.dataset.adClient);
       }
+      script.addEventListener('error', () => {script.dataset.themeAdsError = 'true'; collapseAd();}, {once: true});
+      if (!script.isConnected) document.head.append(script);
+      // Hidden units must not be discovered by another unit's AdSense push.
+      unit.classList.add('adsbygoogle');
+      unit.dataset.themeAdInitialized = 'true';
       try {(window.adsbygoogle = window.adsbygoogle || []).push({});} catch (_) {collapseAd();}
     }, {rootMargin: '200px 0px'});
-    visibilityObserver.observe(sidebarAd);
-  }
+    visibilityObserver.observe(container);
+  });
   $('[data-tag-filter]')?.addEventListener('input', event=>{const value=event.target.value.trim().toLocaleLowerCase();let visible=0;$$('[data-tag-item]').forEach(item=>{item.hidden=!$('strong',item).textContent.toLocaleLowerCase().includes(value);if(!item.hidden)visible++;});$('[data-tag-empty]').hidden=visible>0;});
   const top=$('[data-back-top]'), progress=$('.reading-progress');
   function onScroll(){if(top)top.hidden=window.scrollY<500;if(progress && content){const start=content.getBoundingClientRect().top+window.scrollY;const distance=Math.max(1,content.offsetHeight-innerHeight);const ratio=Math.max(0,Math.min(1,(window.scrollY-start)/distance));progress.style.width=ratio*100+'%';}}

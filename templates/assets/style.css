@@ -94,15 +94,18 @@ body > main.shell {
   .footer-credits {flex-basis: 100%;margin-left: 0;}
 }
 
-/* Ads stay in document flow below the TOC, without sticky overlays. */
+/* Named placements share one ad renderer; every unit stays in document flow. */
 .reading-aside-with-ad .toc-panel {position: static;}
 .reading-aside-with-ad .toc-panel ol {max-height: min(38vh, 360px);}
-.sidebar-ad {margin-top: 26px;min-width: 0;width: 100%;padding-top: 20px;border-top: 1px solid var(--line);}
-.sidebar-ad-label {display: block;margin-bottom: 10px;font-size: 10px;letter-spacing: .08em;color: var(--muted);}
-.sidebar-ad-preview {display: flex;min-height: 250px;flex-direction: column;align-items: center;justify-content: center;gap: 8px;background: var(--soft);border: 1px dashed var(--line);color: var(--muted);font-size: 12px;}
-.sidebar-ad-preview small {font-size: 10px;}
-.sidebar-ad ins.adsbygoogle {width: 100%;}
+.theme-ad {margin-block: 26px;min-width: 0;width: 100%;padding-top: 20px;border-top: 1px solid var(--line);}
+.theme-ad-label {display: block;margin-bottom: 10px;font-size: 10px;letter-spacing: .08em;color: var(--muted);}
+.theme-ad-preview {display: flex;min-height: 120px;flex-direction: column;align-items: center;justify-content: center;gap: 8px;background: var(--soft);border: 1px dashed var(--line);color: var(--muted);font-size: 12px;}
+.theme-ad-preview small {font-size: 10px;}
+.theme-ad[data-ad-position=post_sidebar] .theme-ad-preview,
+.theme-ad[data-ad-position=home_sidebar] .theme-ad-preview {min-height: 250px;}
+.theme-ad ins {width: 100%;}
+.theme-ad[data-ad-position=home_top] {margin-top: 0;}
 @media (max-width: 820px) {
-  .sidebar-ad:not(.sidebar-ad-mobile) {display: none;}
-  .sidebar-ad {margin-top: 20px;}
+  .theme-ad:not(.theme-ad-mobile) {display: none;}
+  .theme-ad {margin-block: 20px;}
 }

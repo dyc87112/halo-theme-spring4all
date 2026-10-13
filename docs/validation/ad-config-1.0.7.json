@@ -1,0 +1,191 @@
+{
+  "version": "1.0.7",
+  "server_checks": [
+    "1.0.6 sidebar settings preserved",
+    "preview placements /",
+    "preview placements /page/2",
+    "preview placements /archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+    "preview placements /categories/spring",
+    "preview placements /tags/java",
+    "preview placements /authors/preview-admin",
+    "preview placements /about",
+    "manual units server output /",
+    "manual units server output /archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+    "independent placement switch",
+    "invalid slot isolated to one placement",
+    "legacy sidebar independent switch",
+    "master switch"
+  ],
+  "multi_unit_checks": [
+    {
+      "case": "hidden units cannot steal another ad request",
+      "scriptCount": 1,
+      "units": [
+        {
+          "count": 1,
+          "googleClass": true,
+          "position": "mobile"
+        },
+        {
+          "count": 0,
+          "googleClass": false,
+          "position": "desktop"
+        },
+        {
+          "count": 0,
+          "googleClass": false,
+          "position": "late"
+        }
+      ],
+      "width": 390
+    },
+    {
+      "case": "three units share one script and initialize once",
+      "counts": [
+        1,
+        1,
+        1
+      ],
+      "scriptCount": 1
+    },
+    {
+      "case": "unfilled affects only own placement",
+      "hidden": [
+        true,
+        false,
+        false
+      ]
+    }
+  ],
+  "responsive_checks": [
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "home_top",
+          "width": 1216
+        },
+        {
+          "display": "block",
+          "position": "home_sidebar",
+          "width": 280
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/",
+      "width": 1440
+    },
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "home_top",
+          "width": 976
+        },
+        {
+          "display": "block",
+          "position": "home_sidebar",
+          "width": 245
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/",
+      "width": 1024
+    },
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "home_top",
+          "width": 354
+        },
+        {
+          "display": "block",
+          "position": "home_sidebar",
+          "width": 354
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/",
+      "width": 390
+    },
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "post_top",
+          "width": 888
+        },
+        {
+          "display": "block",
+          "position": "post_bottom",
+          "width": 888
+        },
+        {
+          "display": "block",
+          "position": "post_sidebar",
+          "width": 280
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "width": 1440
+    },
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "post_top",
+          "width": 701
+        },
+        {
+          "display": "block",
+          "position": "post_bottom",
+          "width": 701
+        },
+        {
+          "display": "block",
+          "position": "post_sidebar",
+          "width": 245
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "width": 1024
+    },
+    {
+      "ads": [
+        {
+          "display": "block",
+          "position": "post_top",
+          "width": 354
+        },
+        {
+          "display": "block",
+          "position": "post_bottom",
+          "width": 354
+        },
+        {
+          "display": "block",
+          "position": "post_sidebar",
+          "width": 354
+        }
+      ],
+      "googleScripts": 0,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "width": 390
+    }
+  ],
+  "console_checks": [
+    "广告配置 tab renders five placement headings",
+    "Individual checkbox save changes actual homepage output",
+    "New placement switches restored to disabled; legacy publisher and slot retained"
+  ],
+  "real_google_requests_during_tests": false
+}

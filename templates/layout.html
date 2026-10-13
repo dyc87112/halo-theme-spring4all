@@ -4,8 +4,8 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title th:if="${head == null}" th:text="${site.title}">SpringForAll</title>
   <th:block th:if="${head != null}"><th:block th:replace="${head}"/></th:block>
-  <link rel="stylesheet" th:href="@{/assets/style.css(v=${theme.spec.version},build=11)}">
-  <script th:src="@{/assets/theme.js(v=${theme.spec.version},build=11)}" defer></script>
+  <link rel="stylesheet" th:href="@{/assets/style.css(v=${theme.spec.version},build=13)}">
+  <script th:src="@{/assets/theme.js(v=${theme.spec.version},build=13)}" defer></script>
 </head>
 <body th:attr="data-shiki-enabled=${pluginFinder.available('shiki')}">
 <a class="skip-link" href="#main">跳到主要内容</a>
