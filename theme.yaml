@@ -12,7 +12,7 @@ spec:
   homepage: https://spring4all.com
   settingName: theme-spring4all-setting
   configMapName: theme-spring4all-config
-  version: 1.0.4
+  version: 1.0.5
   requires: '>=2.26.0'
   license:
     - name: MIT

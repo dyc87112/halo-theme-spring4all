@@ -1,0 +1,1399 @@
+{
+  "version": "1.0.5",
+  "before": [
+    {
+      "content": 1216,
+      "heading": 1216,
+      "main": 1216,
+      "path": "/"
+    },
+    {
+      "content": 1000,
+      "heading": 1000,
+      "main": 1216,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp"
+    },
+    {
+      "content": 760,
+      "heading": 1216,
+      "main": 1216,
+      "path": "/moments"
+    },
+    {
+      "content": 760,
+      "heading": 1216,
+      "main": 1216,
+      "path": "/about"
+    }
+  ],
+  "checks": [
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "home-hero",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "topic-rail",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "feed-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "category-grid",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/categories",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "feed-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/categories/spring",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "tag-toolbar",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "tag-directory",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/tags",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "feed-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/tags/java",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "archive-year",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "pagination",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/archives",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "feed-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/authors/preview-admin",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "standalone",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/about",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "moment-list",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/moments",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "moment-list",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/moments/spring4all-theme-preview",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "article-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "reading-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 112,
+          "width": 1216
+        },
+        {
+          "class": "feed-layout",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/categories/default",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "error-page",
+          "left": 112,
+          "width": 1216
+        }
+      ],
+      "left": 112,
+      "overflow": false,
+      "path": "/this-page-does-not-exist",
+      "viewport": 1440,
+      "width": 1216
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "home-hero",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "topic-rail",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "feed-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "category-grid",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/categories",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "feed-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/categories/spring",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "tag-toolbar",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "tag-directory",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/tags",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "feed-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/tags/java",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "archive-year",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "pagination",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/archives",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "feed-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/authors/preview-admin",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "standalone",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/about",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "moment-list",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/moments",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "moment-list",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/moments/spring4all-theme-preview",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "article-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "reading-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 160,
+          "width": 1280
+        },
+        {
+          "class": "feed-layout",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/categories/default",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "error-page",
+          "left": 160,
+          "width": 1280
+        }
+      ],
+      "left": 160,
+      "overflow": false,
+      "path": "/this-page-does-not-exist",
+      "viewport": 1600,
+      "width": 1280
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "home-hero",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "topic-rail",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "category-grid",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories/spring",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "tag-toolbar",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "tag-directory",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/tags",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/tags/java",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "archive-year",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "pagination",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/archives",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/authors/preview-admin",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "standalone",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/about",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "moment-list",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/moments",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "moment-list",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/moments/spring4all-theme-preview",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "article-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "reading-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 976
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories/default",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "error-page",
+          "left": 24,
+          "width": 976
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/this-page-does-not-exist",
+      "viewport": 1024,
+      "width": 976
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "home-hero",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "topic-rail",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "category-grid",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories/spring",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "tag-toolbar",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "tag-directory",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/tags",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/tags/java",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "archive-year",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "pagination",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/archives",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/authors/preview-admin",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "standalone",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/about",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "moment-list",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/moments",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "moment-list",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/moments/spring4all-theme-preview",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "article-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "reading-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 24,
+          "width": 720
+        },
+        {
+          "class": "feed-layout",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/categories/default",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "error-page",
+          "left": 24,
+          "width": 720
+        }
+      ],
+      "left": 24,
+      "overflow": false,
+      "path": "/this-page-does-not-exist",
+      "viewport": 768,
+      "width": 720
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "home-hero",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "topic-rail",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "feed-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "category-grid",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/categories",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "feed-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/categories/spring",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "tag-toolbar",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "tag-directory",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/tags",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "feed-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/tags/java",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "archive-year",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "pagination",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/archives",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "feed-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/authors/preview-admin",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "standalone",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/about",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "moment-list",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/moments",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "moment-list",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/moments/spring4all-theme-preview",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "article-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "reading-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "page-heading",
+          "left": 18,
+          "width": 354
+        },
+        {
+          "class": "feed-layout",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/categories/default",
+      "viewport": 390,
+      "width": 354
+    },
+    {
+      "aligned": true,
+      "children": [
+        {
+          "class": "error-page",
+          "left": 18,
+          "width": 354
+        }
+      ],
+      "left": 18,
+      "overflow": false,
+      "path": "/this-page-does-not-exist",
+      "viewport": 390,
+      "width": 354
+    }
+  ],
+  "noTocChecks": [
+    {
+      "body": 1216,
+      "layout": 1216,
+      "main": 1216,
+      "overflow": false,
+      "sidebarHidden": true,
+      "viewport": 1440
+    },
+    {
+      "body": 354,
+      "layout": 354,
+      "main": 354,
+      "overflow": false,
+      "sidebarHidden": true,
+      "viewport": 390
+    }
+  ]
+}
