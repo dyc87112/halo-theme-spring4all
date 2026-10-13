@@ -1,0 +1,33 @@
+{
+  "version": "1.0.5",
+  "date": "2026-10-13",
+  "status": "release-candidate-validated",
+  "package": "theme-spring4all-1.0.5.zip",
+  "sha256": "b88bb22a0b70dffbdfec57931449a620a9bdf7b5c7c743302de81530d4461185",
+  "files": 28,
+  "checks": {
+    "working_tree_sensitive_information_scan": true,
+    "git_history_sensitive_information_scan": true,
+    "package_sensitive_information_scan": true,
+    "no_local_ids_credentials_or_local_data": true,
+    "zip_integrity": true,
+    "all_package_files_match_source": true,
+    "static_asset_cache_build": 14,
+    "local_halo_reload_preserves_config": true,
+    "local_routes_200": [
+      "/",
+      "/archives",
+      "/tags",
+      "/moments",
+      "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp"
+    ],
+    "served_css_and_js_match_source": true
+  },
+  "previous_validation": [
+    "layout-width-1.0.5.json",
+    "sidebar-ad-1.0.6.json",
+    "ad-config-1.0.7.json",
+    "google-ad-cards-unreleased.json"
+  ],
+  "production_changed": false
+}

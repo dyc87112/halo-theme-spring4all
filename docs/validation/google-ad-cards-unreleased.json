@@ -1,0 +1,14 @@
+{
+  "status": "unreleased",
+  "version": "1.0.5",
+  "layout": "Shared settings card, three article cards and two homepage cards; all inputs displayed.",
+  "checks": {
+    "all_23_existing_keys_and_defaults_unchanged": true,
+    "all_23_input_wrappers_visible": true,
+    "independent_card_boundaries": true,
+    "five_positions_grouped_by_page_type": true,
+    "save_preserves_entire_original_config": true,
+    "publisher_and_slot_defaults_remain_empty": true
+  },
+  "scope": "Local Halo Console only; no packaging, release, push or production changes."
+}

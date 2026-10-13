@@ -91,32 +91,188 @@ spec:
           label: 主题介绍页完整网址（发布专页后可替换）
           value: https://spring4all.com/
     - group: ads
-      label: 广告配置
+      label: 谷歌广告
       formSchema:
+        - $el: h3
+          children: 公共设置
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 所有位置共用。下面各广告位独立配置，完成后统一点击保存。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
         - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: enabled
           label: 启用主题广告（总开关）
           value: false
         - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: client_id
           label: AdSense 发布商 ID（所有广告位共用）
           placeholder: ca-pub-xxxxxxxxxxxxxxxx
           value: ""
         - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
           name: preview
           label: 布局预览模式（所有已开启位置显示占位，不请求 Google 广告）
           value: false
+        - $el: h2
+          children: 文章页广告
+          attrs:
+            style:
+              font-size: "18px"
+              font-weight: "600"
+              margin: "28px 0 6px"
+        - $el: p
+          children: 三个位置分别配置，不影响彼此的开关与广告单元。
+          attrs:
+            style:
+              color: "#64748b"
+              font-size: "13px"
+              margin-bottom: "4px"
         - $el: h3
-          children: "文章目录下方"
+          children: 文章目录下方
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 位置：文章右侧的目录下方。适合桌面阅读；无目录时仍可保留广告侧栏。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
         - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: sidebar_enabled
           label: 显示文章目录下方广告
           value: true
         - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: slot_id
           label: 广告单元 ID（data-ad-slot）
           value: ""
         - $formkit: select
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: post_sidebar_format
           label: 广告格式
           value: auto
@@ -128,95 +284,104 @@ spec:
             - label: 矩形
               value: rectangle
         - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
           name: show_mobile
           label: 手机和平板也显示此广告位
           value: false
         - $el: h3
-          children: "首页列表上方"
+          children: 文章末尾
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 位置：正文结束与标签之后，上一篇 / 下一篇和评论之前。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
         - $formkit: checkbox
-          name: home_top_enabled
-          label: 显示首页列表上方广告
-          value: false
-        - $formkit: text
-          name: home_top_slot_id
-          label: 广告单元 ID（data-ad-slot）
-          value: ""
-        - $formkit: select
-          name: home_top_format
-          label: 广告格式
-          value: auto
-          options:
-            - label: 自动适配
-              value: auto
-            - label: 横幅
-              value: horizontal
-            - label: 矩形
-              value: rectangle
-        - $formkit: checkbox
-          name: home_top_show_mobile
-          label: 手机和平板也显示此广告位
-          value: false
-        - $el: h3
-          children: "首页侧栏"
-        - $formkit: checkbox
-          name: home_sidebar_enabled
-          label: 显示首页侧栏广告
-          value: false
-        - $formkit: text
-          name: home_sidebar_slot_id
-          label: 广告单元 ID（data-ad-slot）
-          value: ""
-        - $formkit: select
-          name: home_sidebar_format
-          label: 广告格式
-          value: auto
-          options:
-            - label: 自动适配
-              value: auto
-            - label: 横幅
-              value: horizontal
-            - label: 矩形
-              value: rectangle
-        - $formkit: checkbox
-          name: home_sidebar_show_mobile
-          label: 手机和平板也显示此广告位
-          value: false
-        - $el: h3
-          children: "文章正文上方"
-        - $formkit: checkbox
-          name: post_top_enabled
-          label: 显示文章正文上方广告
-          value: false
-        - $formkit: text
-          name: post_top_slot_id
-          label: 广告单元 ID（data-ad-slot）
-          value: ""
-        - $formkit: select
-          name: post_top_format
-          label: 广告格式
-          value: auto
-          options:
-            - label: 自动适配
-              value: auto
-            - label: 横幅
-              value: horizontal
-            - label: 矩形
-              value: rectangle
-        - $formkit: checkbox
-          name: post_top_show_mobile
-          label: 手机和平板也显示此广告位
-          value: false
-        - $el: h3
-          children: "文章末尾"
-        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: post_bottom_enabled
           label: 显示文章末尾广告
           value: false
         - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: post_bottom_slot_id
           label: 广告单元 ID（data-ad-slot）
           value: ""
         - $formkit: select
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
           name: post_bottom_format
           label: 广告格式
           value: auto
@@ -228,7 +393,362 @@ spec:
             - label: 矩形
               value: rectangle
         - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
           name: post_bottom_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h3
+          children: 文章正文上方
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 位置：文章封面之后、正文开始之前。开启后会增加进入正文前的距离。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: post_top_enabled
+          label: 显示文章正文上方广告
+          value: false
+        - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: post_top_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: post_top_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
+          name: post_top_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h2
+          children: 首页广告
+          attrs:
+            style:
+              font-size: "18px"
+              font-weight: "600"
+              margin: "28px 0 6px"
+        - $el: p
+          children: 适用于首页及分页首页；首页侧栏与列表上方分别配置。
+          attrs:
+            style:
+              color: "#64748b"
+              font-size: "13px"
+              margin-bottom: "4px"
+        - $el: h3
+          children: 首页侧栏
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 位置：首页侧栏，社区介绍卡片之后。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_sidebar_enabled
+          label: 显示首页侧栏广告
+          value: false
+        - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_sidebar_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_sidebar_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
+          name: home_sidebar_show_mobile
+          label: 手机和平板也显示此广告位
+          value: false
+        - $el: h3
+          children: 首页列表上方
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "20px 0 0"
+              padding: "16px 20px 8px"
+              border: "1px solid #dbe2ea"
+              border-bottom: none
+              border-radius: "10px 10px 0 0"
+              background: "#f8fafc"
+              font-size: "16px"
+              font-weight: "600"
+        - $el: p
+          children: 位置：技术分类导航之后、文章列表之前。
+          attrs:
+            style:
+              box-sizing: border-box
+              width: "100%"
+              max-width: "860px"
+              margin: "0"
+              padding: "0 20px 14px"
+              border-left: "1px solid #dbe2ea"
+              border-right: "1px solid #dbe2ea"
+              background: "#f8fafc"
+              color: "#64748b"
+              font-size: "13px"
+              line-height: "1.6"
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_top_enabled
+          label: 显示首页列表上方广告
+          value: false
+        - $formkit: text
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_top_slot_id
+          label: 广告单元 ID（data-ad-slot）
+          value: ""
+        - $formkit: select
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #eef2f6"
+                  border-radius: "0"
+                  background: "#ffffff"
+          name: home_top_format
+          label: 广告格式
+          value: auto
+          options:
+            - label: 自动适配
+              value: auto
+            - label: 横幅
+              value: horizontal
+            - label: 矩形
+              value: rectangle
+        - $formkit: checkbox
+          sectionsSchema:
+            outer:
+              attrs:
+                style:
+                  box-sizing: border-box
+                  width: "100%"
+                  max-width: "860px"
+                  margin: "0"
+                  padding: "12px 20px"
+                  border-left: "1px solid #dbe2ea"
+                  border-right: "1px solid #dbe2ea"
+                  border-bottom: "1px solid #dbe2ea"
+                  border-radius: "0 0 10px 10px"
+                  background: "#ffffff"
+          name: home_top_show_mobile
           label: 手机和平板也显示此广告位
           value: false
     - group: seo

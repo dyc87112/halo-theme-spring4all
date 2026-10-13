@@ -1,0 +1,15 @@
+{
+  "status": "unreleased",
+  "version": "1.0.5",
+  "checks": {
+    "five_positions_switch_independently": true,
+    "all_position_inputs_remain_mounted": true,
+    "edits_survive_switching": true,
+    "save_preserves_other_config_groups_and_positions": true,
+    "ui_selector_not_persisted": true,
+    "original_local_config_restored": true,
+    "all_23_existing_keys_and_defaults_unchanged": true,
+    "publisher_and_slots_absent_from_defaults": true
+  },
+  "scope": "Local Halo Console only; no packaging, release, GitHub push or production changes."
+}
