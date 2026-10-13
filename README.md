@@ -1,0 +1,147 @@
+# Spring4All · 春野
+
+为 SpringForAll 社区制作的独立 Halo 主题，版本 1.0.4。
+
+采用 Spring 绿、石墨色和暖白底色，使用编辑型首页、轻量文章列表与独立阅读布局。历史文章没有封面时自动显示与分类匹配的视觉占位。源码为 Thymeleaf + CSS + 原生 JavaScript，无需 Node 构建、在线字体或前端框架。
+
+## 项目维护
+
+这是独立 Git 项目。主要目录：
+
+```text
+theme.yaml / settings.yaml     主题信息与后台设置
+templates/                    页面模板、CSS、JavaScript、SVG
+assets/                       可用于外部场景的 PNG Logo
+docs/                         设计说明与历史验证记录
+scripts/package.py            无额外依赖的安装包生成脚本
+compose.yaml                  本地 Halo 预览配置
+.local/                       本地预览数据（Git 忽略）
+dist/                         生成的安装包（Git 忽略）
+```
+
+打包：
+
+```bash
+python3 scripts/package.py
+```
+
+安装包自动读取 `theme.yaml` 的名称和版本，生成到 `dist/`，仅包含主题运行文件、说明和许可证。
+
+## 1.0.4 更新
+
+- 修复 Shiki 代码高亮插件与主题重复工具栏、复制按钮及外层边框的问题。
+- Shiki 代码块由插件负责展示，普通代码块使用内置 highlight.js 11.12.0 高亮与主题复制栏，资源随主题打包，无外部 CDN 请求。
+- 读取 language-*、lang-*、sourceCode 和 data-language 标记；显式纯文本保持原样，未标记代码使用有限语言识别。
+- 统一深色工具栏与代码区，第三方库许可证见 THIRD-PARTY-LICENSES.txt。
+
+## 1.0.3 更新
+
+- 页脚改为品牌导航、横向友情链接、版权署名三层结构，统一链接样式。
+- 移动端友情链接自然换行，保留所有链接和后台设置。
+
+## 1.0.2 更新
+
+- 页脚增加「友情链接」入口：SpringForAll 社区、程序猿DD、OpenWrite、FastGoing、灵蟹创作。
+- 增加「春野主题 · SpringForAll 出品」主题署名，使用完整网址，部署在其他域名时仍可访问出品方。
+- 名称、网址、品牌区域和主题署名开关可在 Halo 主题设置 → 页脚中调整。
+- 保留 Halo 技术署名；主题介绍页上线后可单独配置其地址。
+- 品牌入口是普通公开链接，不包含访问追踪脚本。
+
+## 1.0.1 更新
+
+- 公共布局至少占满视口高度，短页面页脚自然贴底，长页面正常滚动。
+- 高屏桌面上的归档列表适度增加行距。
+- 更新静态资源版本，避免旧 CSS 缓存。
+
+## 安装
+
+1. Halo Console → 主题 → 安装主题，上传 `theme-spring4all-1.0.4.zip`。
+2. 在主题列表选择 **Spring4All · 春野**，打开预览检查内容。
+3. 需要正式使用时点击 **启用**。
+4. 在主题设置中调整首页文案、焦点卡片、导航来源、社区介绍、备案号及 SEO 元数据开关。
+
+兼容约束：Halo >= 2.26.0。本次实际测试版本为 2.26.1，与 spring4all.com 页面声明的版本相同。只修改主题展示，不需要迁移文章、分类、标签或附件。保留原主题，随时可在 Halo 切回。
+
+## 页面覆盖
+
+| 模板 | 页面 |
+| --- | --- |
+| index.html | 首页、分页首页 |
+| post.html | 文章详情、目录、代码复制、阅读进度、相邻文章、评论 |
+| categories.html / category.html | 技术专题集合、分类文章 |
+| tags.html / tag.html | 可筛选标签集合、标签文章 |
+| archives.html | 年月归档及分页 |
+| author.html | 作者文章 |
+| page.html | 关于等独立页面 |
+| moments.html / moment.html | 瞬间列表与详情，需瞬间插件 |
+| error/404.html / error/error.html | 404 与通用错误 |
+| layout.html | Halo 2.26 的插件页面布局契约 |
+
+## 交互与适配
+
+- 390px 手机和 1440px 桌面实际浏览器检查；820px 和 580px 断点重排。
+- 明暗模式保存在浏览器本地，并同步 `data-color-scheme` 给 Halo 插件。
+- 搜索调用 Halo 官方搜索插件，可用 ⌘K / Ctrl+K 打开。
+- 标签页支持本地即时筛选与无结果提示。
+- 文章自动生成二、三级目录、阅读时长和阅读进度。
+- 代码复制操作在 HTTPS 或 localhost 下可用；权限被拒绝时显示人工复制提示。
+- 识别 Shiki 管理的代码块并跳过主题包装，避免双重工具栏；普通代码块使用主题复制栏。
+- 正文宽表格可横向滚动，图片和视频随容器缩放。
+- 支持跳过导航、键盘焦点、移动菜单 Escape 关闭、减少动态效果偏好。
+- 保留 Halo 评论与页脚注入。站点 SEO 描述由 Halo 注入；文章与单页的 canonical、Open Graph 可在主题设置关闭，避免与 SEO 插件重复。
+
+## 导航说明
+
+默认导航为「发现 / 技术专题 / 文章归档 / 标签 / 瞬间」。瞬间插件停用时，内置瞬间入口自动隐藏。
+
+如需继续使用原站的「文档 / 教程 / 工具 / 关于」和外部链接：在主题设置 → 首页与品牌，开启 **使用 Halo 主菜单**。主题会读取后台主菜单及其子菜单，保留目标地址和新窗口设置。导航内容仍通过 Halo 的菜单功能维护。移动端保留基础内容入口，同时显示主菜单。
+
+原站的文档、教程、工具一级菜单指向 `/`，实际资源位于子菜单。建议将这几个一级入口改成真正的聚合页面，或清晰命名为资源菜单。
+
+## 内容运营建议
+
+- 为分类填写一两句话的简介，专题页会直接显示，缺省时显示通用介绍。
+- 首页焦点展示当前列表第一篇文章；可利用 Halo 置顶与排序控制。置顶文章显示「社区精选」，普通文章显示「最新焦点」。
+- 目前首页专题快捷入口展示 Halo 返回顺序中的前 5 个分类；完整分类仍可通过分类页和文章筛选访问。
+- 系统设置中的 Logo 优先；未配置时使用本主题附带的叶片标识。
+- 作者名、文章摘要、分类文章数和阅读数均来自 Halo 数据，不在主题中写死。
+- 原站关于页仍是 Halo 自动生成的介绍文案，建议在后台补充社区定位、负责人及参与方式。
+
+## 本地验证环境
+
+预览使用 Halo 2.26.1，仅绑定本机 `127.0.0.1:18090`。在项目根目录执行：
+
+```bash
+docker compose up -d
+docker compose logs -f --tail=100
+docker compose stop
+```
+
+打开 <http://localhost:18090/>。主题源码直接以只读方式挂载进 Halo，Thymeleaf 缓存已关闭。修改主题配置后在 Console 重载主题。
+
+本机迁移时保留了原本地测试数据，放在被 Git 忽略的 `.local/halo/` 中；包含 20 篇公开文章样本和演示瞬间。全新克隆没有这些数据，首次启动需要在 Halo 初始化站点，并安装、启用本主题及所需插件。本地账户、数据库、密钥和插件不进入 Git 或安装包。
+
+原预览容器 `spring4all-theme-preview` 已停止，仍保留旧数据备份。它使用相同的 18090 端口，不要同时启动。后续预览使用本项目的 Compose 配置。
+
+本次迁移没有修改生产站。
+
+## 开发与验证
+
+修改 `templates/` 后在开发 Halo 中关闭 Thymeleaf 缓存即可预览；修改 theme.yaml 或 settings.yaml 后，在 Console 中重载主题配置。发布更新时递增 theme.yaml 的版本号，以更新静态资源缓存。
+
+已检查 14 个路径/状态：正常内容页返回 200，缺失页面返回 404；正常列表不显示空状态，空分类显示空状态。搜索插件可查询实际文章；已验证标签筛选、明暗切换、移动菜单及代码复制。已验证搜索和瞬间插件停用时首页仍正常，恢复插件后入口可用。
+
+评论使用 Halo 标准扩展点，未在测试站提交评论；应在正式站预览中核对已有评论插件的登录与发布流程。没有对 Safari、Firefox、所有第三方插件及所有历史文章格式做穷举测试。
+
+## 参考
+
+- [Halo 主题开发](https://docs.halo.run/developer-guide/theme/prepare)
+- [模板路由](https://docs.halo.run/developer-guide/theme/template-route-mapping)
+- [插件集成](https://docs.halo.run/developer-guide/theme/plugin-integration)
+- [页面布局契约](https://docs.halo.run/developer-guide/theme/page-layout)
+- [主题 SEO](https://docs.halo.run/developer-guide/theme/seo)
+- [官方瞬间插件](https://github.com/halo-sigs/plugin-moments)
+
+## License
+
+主题原创代码采用 MIT License。站点内容、商标与文章版权归其原权利人。

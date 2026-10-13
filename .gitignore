@@ -1,0 +1,9 @@
+# Local preview data, credentials and generated packages
+.local/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc

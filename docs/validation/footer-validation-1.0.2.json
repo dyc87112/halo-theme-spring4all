@@ -1,0 +1,66 @@
+[
+  {
+    "route": "/moments",
+    "status": 200,
+    "footer_links": [
+      "/",
+      "/categories",
+      "/archives",
+      "/tags",
+      "https://spring4all.com/",
+      "https://didispace.com/",
+      "https://beian.miit.gov.cn/",
+      "https://spring4all.com/",
+      "https://spring4all.com/",
+      "https://halo.run"
+    ]
+  },
+  {
+    "route": "/archives",
+    "status": 200,
+    "footer_links": [
+      "/",
+      "/categories",
+      "/archives",
+      "/tags",
+      "https://spring4all.com/",
+      "https://didispace.com/",
+      "https://beian.miit.gov.cn/",
+      "https://spring4all.com/",
+      "https://spring4all.com/",
+      "https://halo.run"
+    ]
+  },
+  {
+    "route": "/categories",
+    "status": 200,
+    "footer_links": [
+      "/",
+      "/categories",
+      "/archives",
+      "/tags",
+      "https://spring4all.com/",
+      "https://didispace.com/",
+      "https://beian.miit.gov.cn/",
+      "https://spring4all.com/",
+      "https://spring4all.com/",
+      "https://halo.run"
+    ]
+  },
+  {
+    "route": "/tags",
+    "status": 200,
+    "footer_links": [
+      "/",
+      "/categories",
+      "/archives",
+      "/tags",
+      "https://spring4all.com/",
+      "https://didispace.com/",
+      "https://beian.miit.gov.cn/",
+      "https://spring4all.com/",
+      "https://spring4all.com/",
+      "https://halo.run"
+    ]
+  }
+]

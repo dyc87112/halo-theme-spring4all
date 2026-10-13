@@ -1,0 +1,217 @@
+{
+  "haloVersion": "2.26.1",
+  "routes": [
+    {
+      "page": "home",
+      "path": "/",
+      "status": 200,
+      "title": [
+        "SpringForAll社区"
+      ],
+      "h1": [
+        "让技术生根，让灵感生长。"
+      ],
+      "cards": 10,
+      "empty": false,
+      "size": 16951
+    },
+    {
+      "page": "page-2",
+      "path": "/page/2",
+      "status": 200,
+      "title": [
+        "SpringForAll社区 · 第 2 页"
+      ],
+      "h1": [
+        "更多值得阅读的内容。"
+      ],
+      "cards": 10,
+      "empty": false,
+      "size": 16310
+    },
+    {
+      "page": "categories",
+      "path": "/categories",
+      "status": 200,
+      "title": [
+        "技术专题 · SpringForAll社区"
+      ],
+      "h1": [
+        "每一种好奇，都有方向。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 6625
+    },
+    {
+      "page": "category",
+      "path": "/categories/spring",
+      "status": 200,
+      "title": [
+        "Spring · SpringForAll社区"
+      ],
+      "h1": [
+        "Spring"
+      ],
+      "cards": 6,
+      "empty": false,
+      "size": 10963
+    },
+    {
+      "page": "tags",
+      "path": "/tags",
+      "status": 200,
+      "title": [
+        "全部标签 · SpringForAll社区"
+      ],
+      "h1": [
+        "从一个关键词，打开新世界。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 6530
+    },
+    {
+      "page": "tag",
+      "path": "/tags/java",
+      "status": 200,
+      "title": [
+        "# java · SpringForAll社区"
+      ],
+      "h1": [
+        "# java"
+      ],
+      "cards": 7,
+      "empty": false,
+      "size": 11831
+    },
+    {
+      "page": "archives",
+      "path": "/archives",
+      "status": 200,
+      "title": [
+        "文章归档 · SpringForAll社区"
+      ],
+      "h1": [
+        "每一次记录，都在积累。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 5338
+    },
+    {
+      "page": "author",
+      "path": "/authors/preview-admin",
+      "status": 200,
+      "title": [
+        "hello · SpringForAll社区"
+      ],
+      "h1": [
+        "hello"
+      ],
+      "cards": 10,
+      "empty": false,
+      "size": 14774
+    },
+    {
+      "page": "post",
+      "path": "/archives/spring-boot-42-m2-ldaps-ssl-bundle-otlp",
+      "status": 200,
+      "title": [
+        "Spring Boot 4.2.0-M2：LDAPS SSL Bundle 与 OTLP 语义约定，升级前先看什么 · SpringForAll社区"
+      ],
+      "h1": [
+        "Spring Boot 4.2.0-M2：LDAPS SSL Bundle 与 OTLP 语义约定，升级前先看什么"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 25369
+    },
+    {
+      "page": "404",
+      "path": "/this-page-does-not-exist",
+      "status": 404,
+      "title": [
+        "页面未找到 · SpringForAll社区"
+      ],
+      "h1": [
+        "这条路径，还没有被写下。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 2711
+    },
+    {
+      "page": "empty-category",
+      "path": "/categories/default",
+      "status": 200,
+      "title": [
+        "默认分类 · SpringForAll社区"
+      ],
+      "h1": [
+        "默认分类"
+      ],
+      "cards": 0,
+      "empty": true,
+      "size": 5379
+    },
+    {
+      "page": "page",
+      "path": "/about",
+      "status": 200,
+      "title": [
+        "关于 · SpringForAll社区"
+      ],
+      "h1": [
+        "关于"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 4678
+    },
+    {
+      "page": "moments",
+      "path": "/moments",
+      "status": 200,
+      "title": [
+        "瞬间 · SpringForAll社区"
+      ],
+      "h1": [
+        "灵感，不只在长文里。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 4862
+    },
+    {
+      "page": "moment",
+      "path": "/moments/spring4all-theme-preview",
+      "status": 200,
+      "title": [
+        "瞬间详情 · SpringForAll社区"
+      ],
+      "h1": [
+        "一个值得记录的瞬间。"
+      ],
+      "cards": 0,
+      "empty": false,
+      "size": 5337
+    }
+  ],
+  "viewportChecks": {
+    "mobile": 390,
+    "desktop": 1440,
+    "mobileOverflow": false
+  },
+  "interactionChecks": [
+    "search-results",
+    "tag-filter",
+    "tag-empty",
+    "mobile-menu",
+    "escape-close",
+    "dark-mode",
+    "code-copy-with-highlighter"
+  ],
+  "optionalPluginsDisabledHomePassed": true,
+  "productionChanged": false
+}

@@ -1,0 +1,10 @@
+services:
+  halo:
+    image: halohub/halo:2.26.1
+    ports:
+      - "127.0.0.1:18090:8090"
+    environment:
+      SPRING_THYMELEAF_CACHE: "false"
+    volumes:
+      - ./.local/halo:/root/.halo2
+      - ./:/root/.halo2/themes/theme-spring4all:ro

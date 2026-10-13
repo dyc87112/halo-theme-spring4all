@@ -1,0 +1,19 @@
+{
+  "source": "https://spring4all.com/archives/hibernate-orm-8-beta-entityagent-safe-mode",
+  "languages_verified": [
+    "java",
+    "properties",
+    "xml",
+    "groovy",
+    "yaml"
+  ],
+  "explicit_plaintext_preserved": true,
+  "unlabelled_java_detected": true,
+  "copy_matches_source": true,
+  "mobile_viewport": 390,
+  "page_horizontal_overflow": false,
+  "code_keyboard_scroll_left": 40,
+  "shiki_blocks": 5,
+  "duplicate_toolbars": 0,
+  "shiki_only_page_loads_fallback_library": false
+}

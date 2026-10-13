@@ -1,0 +1,99 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: theme-spring4all-setting
+spec:
+  forms:
+    - group: home
+      label: 首页与品牌
+      formSchema:
+        - $formkit: text
+          name: eyebrow
+          label: 首页短标签
+          value: 为开发者而生的技术社区
+        - $formkit: text
+          name: headline
+          label: 首页主标题
+          value: 让技术生根，让灵感生长。
+        - $formkit: textarea
+          name: description
+          label: 首页介绍
+          value: 从 Java 与 Spring，到 AI 与开源。分享经得起实践的知识，和认真做技术的人一起成长。
+        - $formkit: checkbox
+          name: use_primary_menu
+          label: 使用 Halo 主菜单（关闭则使用主题内置导航）
+          value: false
+        - $formkit: checkbox
+          name: show_featured
+          label: 显示首页焦点文章
+          value: true
+    - group: footer
+      label: 页脚
+      formSchema:
+        - $formkit: text
+          name: tagline
+          label: 社区介绍
+          value: 连接开发者，让好技术被更多人看见。
+        - $formkit: text
+          name: icp
+          label: ICP 备案号（请按实际备案填写）
+          value: 沪ICP备17049000号-1
+        - $formkit: checkbox
+          name: show_network
+          label: 显示品牌站点链接
+          value: true
+        - $formkit: text
+          name: community_name
+          label: 社区入口名称
+          value: SpringForAll 社区
+        - $formkit: url
+          name: community_url
+          label: 社区完整网址
+          value: https://spring4all.com/
+        - $formkit: text
+          name: dd_name
+          label: 程序猿DD 入口名称
+          value: 程序猿DD
+        - $formkit: url
+          name: dd_url
+          label: 程序猿DD 完整网址
+          value: https://didispace.com/
+        - $formkit: text
+          name: openwrite_name
+          label: OpenWrite 入口名称
+          value: OpenWrite
+        - $formkit: url
+          name: openwrite_url
+          label: OpenWrite 完整网址
+          value: https://openwrite.cn/
+        - $formkit: text
+          name: fastgoing_name
+          label: FastGoing 入口名称
+          value: FastGoing
+        - $formkit: url
+          name: fastgoing_url
+          label: FastGoing 完整网址
+          value: https://fastgoing.org/
+        - $formkit: text
+          name: soloent_name
+          label: 灵蟹创作 入口名称
+          value: 灵蟹创作
+        - $formkit: url
+          name: soloent_url
+          label: 灵蟹创作 完整网址
+          value: https://soloent.cn/
+        - $formkit: checkbox
+          name: show_credit
+          label: 显示主题出品署名
+          value: true
+        - $formkit: url
+          name: theme_url
+          label: 主题介绍页完整网址（发布专页后可替换）
+          value: https://spring4all.com/
+    - group: seo
+      label: 分享与搜索引擎
+      formSchema:
+        - $formkit: checkbox
+          name: enable_metadata
+          label: 输出文章与独立页面 canonical 和 Open Graph（若 SEO 插件已提供，请关闭）
+          value: true

@@ -1,0 +1,22 @@
+{
+  "version": "1.0.1",
+  "desktopViewport": [
+    1440,
+    1800
+  ],
+  "footerBottom": {
+    "/archives": 1800,
+    "/tags": 1800,
+    "/about": 1800,
+    "/categories/default": 1800
+  },
+  "longArticleOverlapsFooter": false,
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "horizontalOverflow": false,
+  "originalViewportHeight": 1879,
+  "originalFooterBottom": 1348,
+  "fixedFooterBottom": 1879
+}

@@ -1,0 +1,18 @@
+apiVersion: theme.halo.run/v1alpha1
+kind: Theme
+metadata:
+  name: theme-spring4all
+spec:
+  displayName: Spring4All · 春野
+  author:
+    name: SpringForAll
+    website: https://spring4all.com
+  description: 为 SpringForAll 打造的现代技术社区主题。专注内容、清晰导航、舒适阅读。
+  logo: /themes/theme-spring4all/assets/logo.svg
+  homepage: https://spring4all.com
+  settingName: theme-spring4all-setting
+  configMapName: theme-spring4all-config
+  version: 1.0.4
+  requires: '>=2.26.0'
+  license:
+    - name: MIT

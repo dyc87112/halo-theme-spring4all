@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-13",
+  "version": "1.0.4",
+  "original_file_count": 26,
+  "source_files_verified_before_maintenance_docs": [
+    {
+      "path": "settings.yaml",
+      "sha256": "3b90b74b878edac9c866a201160797c82948cef1a62182932f6ef59a8387cd00"
+    },
+    {
+      "path": "theme.yaml",
+      "sha256": "2588c8c04f4857dbdd97631df8960ac028b92b30a0bdfbb69364e8ce90c74193"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c9d5fbbc18154d3c3b39e7c9ff0ffd5155f53fc3239e4d5d59be1d4f23990425"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cbf9ca6d0c3156bf837e7edf960e193fb85235bfb6de6cbddc6d640659d84625"
+    },
+    {
+      "path": "THIRD-PARTY-LICENSES.txt",
+      "sha256": "c12d6d8ede8b2ae3e364a1931d89afcc5fc4df6162b49cb490e6fba34f14df84"
+    },
+    {
+      "path": "templates/post.html",
+      "sha256": "780b5364ccc2905fe269b03aed004d65bc33845a1bddd033501033c239f94cc4"
+    },
+    {
+      "path": "templates/page.html",
+      "sha256": "b65de7d1d0768715091511230b22e8d777e600e40f6353d151696e94b0af2a4f"
+    },
+    {
+      "path": "templates/tags.html",
+      "sha256": "a347269a4401106c06dbf1287c34434d42101f280a2b4a5bef24ae648e1fb1f1"
+    },
+    {
+      "path": "templates/index.html",
+      "sha256": "cfd1f167359a522ee1401953f87b931c0db35a03f1b0db5a987c9a7d28f7eacf"
+    },
+    {
+      "path": "templates/tag.html",
+      "sha256": "32cd5db3bdf8f78b7c5d834a139d646d945d8f74ccac04dc7b9455fee5fcaaec"
+    },
+    {
+      "path": "templates/layout.html",
+      "sha256": "541051f0d21997af016624c43eda15d528cd19dc7d64f96b56ed9d8cde4d92f9"
+    },
+    {
+      "path": "templates/category.html",
+      "sha256": "736af13419a0a1c3510f21f9ca5944b58d75cf84846f1d9fbf0c9cefad149a28"
+    },
+    {
+      "path": "templates/author.html",
+      "sha256": "e9af82e29f9adde8c8cfc8cd16cfc157622f7e85c0694002ddad62348bd6dc4d"
+    },
+    {
+      "path": "templates/moments.html",
+      "sha256": "7db8e2dcc4c14b0352651f089dd8d5b79e493c65b0bdf77b68561faebeb4de7a"
+    },
+    {
+      "path": "templates/moment.html",
+      "sha256": "a035381f942140298c2748d64e07f2241ff3dc0a8e33f8ea5cc4147509799b1d"
+    },
+    {
+      "path": "templates/archives.html",
+      "sha256": "7c41fa5f080522196f35b1381768ed6299349880963dfcdcda0d8066647351a4"
+    },
+    {
+      "path": "templates/categories.html",
+      "sha256": "decbed9bd45f1041920fe257ea4ee88bdca6ddd615e7bcc08f667e08bfbf5cca"
+    },
+    {
+      "path": "templates/modules/seo.html",
+      "sha256": "c96084ce549f8c9e26a6ddafbf1bb572a54be56933dd262a3d1c56c52de2dddd"
+    },
+    {
+      "path": "templates/modules/moment-card.html",
+      "sha256": "aa63a6e543944fbfcd34fc39b75907a554e9e7b8960b43982415c1968d789277"
+    },
+    {
+      "path": "templates/modules/ui.html",
+      "sha256": "4d40e11db2c9e8479167b370c04685f22b007df13306d43f6bcb1dc7d19fb002"
+    },
+    {
+      "path": "templates/assets/theme.js",
+      "sha256": "9311183a20eda7f8d56a03f36311ca9d2c3d647e951f0ae39cfa4fbbaf4f8cdb"
+    },
+    {
+      "path": "templates/assets/style.css",
+      "sha256": "c2479f4d317d02cbad041ab247932542efba205559f65ab1415ac1140ab50a89"
+    },
+    {
+      "path": "templates/assets/highlight.min.js",
+      "sha256": "ea93439fc7b05c124677bfa2a9cc5e03415106fbce7d7f26ff0e9963ce11ebff"
+    },
+    {
+      "path": "templates/assets/logo.svg",
+      "sha256": "b4096e9ed4e553c688be155169a93f60d1ff2977ba2615935067e468eb364aeb"
+    },
+    {
+      "path": "templates/error/404.html",
+      "sha256": "6573f6003c541f600377cd332d257b68e480e6768cea6a1f089e8ac80d2a0b99"
+    },
+    {
+      "path": "templates/error/error.html",
+      "sha256": "5eb35484b60a19a8f9864054257c1069706554bc8a6246132d571684a0763b07"
+    }
+  ],
+  "runtime_data": "Copied to .local/halo; excluded from Git and ZIP"
+}
