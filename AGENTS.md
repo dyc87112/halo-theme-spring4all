@@ -1,4 +1,4 @@
-# Spring4All · 春野主题维护
+# halo-theme-spring4all · 春野主题维护
 
 本目录是独立 Halo 主题项目。主题标识为 `theme-spring4all`，以 `theme.yaml` 中的版本为准。
 

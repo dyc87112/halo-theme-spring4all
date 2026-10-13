@@ -1,4 +1,4 @@
-# Spring4All · 春野
+# halo-theme-spring4all · 春野
 
 为 SpringForAll 社区制作的独立 Halo 主题，版本 1.0.4。
 
@@ -6,7 +6,7 @@
 
 ## 项目维护
 
-这是独立 Git 项目。主要目录：
+项目名为 `halo-theme-spring4all`，独立 Git 仓库。Halo 内部主题标识仍为 `theme-spring4all`，安装包名称也沿用这一标识，兼容已有安装。主要目录：
 
 ```text
 theme.yaml / settings.yaml     主题信息与后台设置
