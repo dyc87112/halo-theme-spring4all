@@ -90,6 +90,31 @@ spec:
           name: theme_url
           label: 主题介绍页完整网址（发布专页后可替换）
           value: https://spring4all.com/
+    - group: ads
+      label: 文章侧栏广告
+      formSchema:
+        - $formkit: checkbox
+          name: enabled
+          label: 在文章目录下显示 AdSense 广告
+          value: false
+        - $formkit: text
+          name: client_id
+          label: AdSense 发布商 ID（data-ad-client）
+          placeholder: ca-pub-xxxxxxxxxxxxxxxx
+          value: ""
+        - $formkit: text
+          name: slot_id
+          label: 广告单元 ID（data-ad-slot）
+          placeholder: 从 AdSense 展示广告单元代码中获取
+          value: ""
+        - $formkit: checkbox
+          name: show_mobile
+          label: 手机和平板也显示广告（位于目录与正文之间）
+          value: false
+        - $formkit: checkbox
+          name: preview
+          label: 布局预览模式（只显示占位，不请求 Google 广告）
+          value: false
     - group: seo
       label: 分享与搜索引擎
       formSchema:

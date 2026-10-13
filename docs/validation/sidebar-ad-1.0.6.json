@@ -1,0 +1,124 @@
+{
+  "version": "1.0.6",
+  "server_checks": [
+    {
+      "case": "disabled",
+      "passed": true,
+      "units": 0
+    },
+    {
+      "case": "missing-parameters",
+      "passed": true,
+      "units": 0
+    },
+    {
+      "case": "invalid-publisher",
+      "passed": true,
+      "units": 0
+    },
+    {
+      "case": "invalid-slot",
+      "passed": true,
+      "units": 0
+    },
+    {
+      "case": "valid-manual-unit",
+      "passed": true,
+      "units": 1
+    },
+    {
+      "case": "non-article /",
+      "passed": true
+    },
+    {
+      "case": "non-article /moments",
+      "passed": true
+    },
+    {
+      "case": "non-article /about",
+      "passed": true
+    }
+  ],
+  "browser_checks": [
+    {
+      "adVisible": true,
+      "belowToc": true,
+      "case": "preview 1600",
+      "googleScripts": 0,
+      "overflow": false,
+      "preview": true
+    },
+    {
+      "adVisible": true,
+      "belowToc": true,
+      "case": "preview 1024",
+      "googleScripts": 0,
+      "overflow": false,
+      "preview": true
+    },
+    {
+      "adVisible": false,
+      "belowToc": false,
+      "case": "preview 390",
+      "googleScripts": 0,
+      "overflow": false,
+      "preview": true
+    },
+    {
+      "asideHidden": false,
+      "case": "/existing.html",
+      "googleScripts": 1,
+      "initCount": "1"
+    },
+    {
+      "adHidden": true,
+      "asideHidden": true,
+      "case": "/existing.html collapse",
+      "layoutFull": true
+    },
+    {
+      "asideHidden": false,
+      "case": "/new.html",
+      "googleScripts": 1,
+      "initCount": "1"
+    },
+    {
+      "adHidden": true,
+      "asideHidden": true,
+      "case": "/new.html collapse",
+      "layoutFull": true
+    },
+    {
+      "aboveBody": true,
+      "belowToc": true,
+      "case": "mobile enabled",
+      "overflow": false,
+      "visible": true
+    },
+    {
+      "case": "hidden mobile does not request ad",
+      "pushCount": "0",
+      "scriptCount": 0
+    },
+    {
+      "case": "resize init once",
+      "pushCount": "1"
+    },
+    {
+      "adCount": 0,
+      "case": "ads disabled restores sticky toc",
+      "googleScripts": 0,
+      "tocPosition": "sticky",
+      "viewport": 1440
+    },
+    {
+      "adHidden": true,
+      "asideHidden": true,
+      "case": "existing script load error"
+    }
+  ],
+  "total_passed": 20,
+  "real_google_requests_during_tests": false,
+  "browser_script_tests": "Offline stub; real Google ads were not requested or clicked.",
+  "preview_config": "User publisher and unit IDs were set only in ignored local Halo data."
+}
