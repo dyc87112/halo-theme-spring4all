@@ -1,0 +1,21 @@
+{
+  "version": "1.0.6",
+  "status": "local-test-package",
+  "package": "theme-spring4all-1.0.6.zip",
+  "files": 33,
+  "bytes": 92751,
+  "sha256": "67ba4078635feb1f13febaaa3f5bb12a9d6a42aa696486a807a0c2343509cd68",
+  "checks": {
+    "zip_integrity": true,
+    "theme_version": true,
+    "console_ui_entry_and_style_included": true,
+    "friend_sources_included": true,
+    "sidebar_ad_fix_included": true,
+    "local_data_and_dependencies_excluded": true,
+    "site_ad_ids_not_in_defaults": true,
+    "released_1_0_5_zip_unchanged": true
+  },
+  "published": false,
+  "tag_created": false,
+  "installed": false
+}

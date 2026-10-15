@@ -7,3 +7,10 @@ dist/
 .DS_Store
 __pycache__/
 *.pyc
+
+# Theme Console UI dependencies
+node_modules/
+
+# Required Console UI runtime shipped with the theme
+!ui-plugin/dist/
+!ui-plugin/dist/**

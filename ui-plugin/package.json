@@ -1,0 +1,18 @@
+{
+  "name": "spring4all-theme-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@formkit/vue": "2.1.2",
+    "@halo-dev/ui-shared": "2.26.0",
+    "vue": "3.5.41"
+  },
+  "devDependencies": {
+    "@halo-dev/ui-plugin-bundler-kit": "2.26.0",
+    "@vitejs/plugin-vue": "6.0.5",
+    "vite": "7.3.1"
+  }
+}

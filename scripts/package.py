@@ -13,6 +13,11 @@ if not name or not version:
 required = ['theme.yaml', 'settings.yaml', 'LICENSE', 'THIRD-PARTY-LICENSES.txt', 'README.md']
 files = [root / p for p in required]
 files += sorted((root / 'templates').rglob('*'))
+# Include only the theme Console UI runtime, not its sources or dependencies.
+ui_runtime = root / 'ui-plugin' / 'dist'
+if not (ui_runtime / 'ui-plugin.json').is_file():
+    raise SystemExit('Missing Console UI runtime: run npm ci and npm run build in ui-plugin first')
+files += sorted(ui_runtime.rglob('*'))
 files = [p for p in files if p.is_file() and p.name != '.DS_Store']
 if any(not (root / p).is_file() for p in required) or not (root / 'templates/layout.html').is_file():
     raise SystemExit('Required theme files are missing')

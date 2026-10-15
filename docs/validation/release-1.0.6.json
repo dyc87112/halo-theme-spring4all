@@ -1,0 +1,39 @@
+{
+  "version": "1.0.6",
+  "date": "2026-10-15",
+  "status": "release-candidate-validated",
+  "package": "theme-spring4all-1.0.6.zip",
+  "sha256": "cd5f5219334d7c8545a5ae81cbdd36d5a1753da48509e1ce86d01db83d445100",
+  "files": 33,
+  "bytes": 92673,
+  "checks": {
+    "working_tree_sensitive_information_scan": true,
+    "git_history_sensitive_information_scan": true,
+    "no_site_ids_credentials_or_local_data": true,
+    "zip_integrity": true,
+    "all_package_files_match_source": true,
+    "console_ui_runtime_included": true,
+    "static_asset_cache_build": 17,
+    "local_halo_reload_preserves_config": true,
+    "local_routes_200": [
+      "/",
+      "/archives",
+      "/categories",
+      "/tags",
+      "/moments",
+      "/archives/spring-boot-41-testcontainers-postgresql"
+    ],
+    "served_css_and_js_match_source": true,
+    "console_ui_provider_version": "1.0.6",
+    "previous_release_zip_unchanged": true,
+    "package_sensitive_information_scan": true
+  },
+  "previous_validation": [
+    "p0-generalization-unreleased.json",
+    "footer-sources-unreleased.json",
+    "footer-plugin-selection-unreleased.json",
+    "sidebar-ad-flow-unreleased.json",
+    "test-package-1.0.6.json"
+  ],
+  "production_changed": false
+}

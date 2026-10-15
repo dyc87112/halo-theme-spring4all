@@ -1,0 +1,90 @@
+{
+  "status": "unreleased",
+  "version": "1.0.5",
+  "local_halo_version": "2.26.1",
+  "checks": [
+    {
+      "case": "custom editor visible only for custom source",
+      "passed": true
+    },
+    {
+      "case": "plugin missing installation prompt",
+      "passed": true
+    },
+    {
+      "case": "installed disabled plugin prompt",
+      "passed": true
+    },
+    {
+      "case": "installed plugin links displayed with names, urls and groups",
+      "passed": true
+    },
+    {
+      "case": "search by group",
+      "passed": true
+    },
+    {
+      "case": "native Console saves selected resource IDs",
+      "passed": true
+    },
+    {
+      "case": "only selected grouped and ungrouped links rendered",
+      "passed": true
+    },
+    {
+      "case": "switching sources preserves both configs",
+      "passed": true
+    },
+    {
+      "case": "saving plugin mode preserves custom values before custom editor mounts",
+      "passed": true
+    },
+    {
+      "case": "plugin disabled hides frontend",
+      "passed": true
+    },
+    {
+      "case": "empty selection hides frontend",
+      "passed": true
+    },
+    {
+      "case": "deleted selection hides frontend and can be cleared",
+      "passed": true
+    },
+    {
+      "case": "installed empty plugin prompt",
+      "passed": true
+    },
+    {
+      "case": "390px no horizontal overflow",
+      "passed": true
+    },
+    {
+      "case": "final component loads without browser errors",
+      "passed": true
+    },
+    {
+      "case": "original local settings restored and disposable plugin data removed",
+      "passed": true
+    },
+    {
+      "case": "ads unchanged",
+      "passed": true
+    },
+    {
+      "case": "existing release ZIP unchanged",
+      "passed": true
+    }
+  ],
+  "ui_runtime": {
+    "format": "esm",
+    "entry": "./main.6xw2evza.js",
+    "style": "./assets/index.B3MGfle0.css"
+  },
+  "mobile": {
+    "viewport": 390,
+    "scrollWidth": 390,
+    "widgetWidth": 358
+  },
+  "packaged_or_published": false
+}

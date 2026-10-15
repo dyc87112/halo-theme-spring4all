@@ -2,49 +2,37 @@
 <html lang="zh-CN" xmlns:th="https://www.thymeleaf.org" th:fragment="html(head, content)" data-color-scheme="light">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title th:if="${head == null}" th:text="${site.title}">SpringForAll</title>
+  <title th:if="${head == null}" th:text="${site.title}">站点</title>
   <th:block th:if="${head != null}"><th:block th:replace="${head}"/></th:block>
-  <link rel="stylesheet" th:href="@{/assets/style.css(v=${theme.spec.version},build=14)}">
-  <script th:src="@{/assets/theme.js(v=${theme.spec.version},build=14)}" defer></script>
+  <link rel="stylesheet" th:href="@{/assets/style.css(v=${theme.spec.version},build=17)}">
+  <script th:src="@{/assets/theme.js(v=${theme.spec.version},build=17)}" defer></script>
 </head>
 <body th:attr="data-shiki-enabled=${pluginFinder.available('shiki')}">
 <a class="skip-link" href="#main">跳到主要内容</a>
-<header class="site-header"><div class="shell header-inner">
-  <a class="brand" href="/" th:aria-label="${site.title}"><img th:src="${#strings.isEmpty(site.logo) ? '/themes/theme-spring4all/assets/logo.svg' : site.logo}" alt="" width="36" height="36"><span>Spring<span class="brand-green">ForAll</span><small>开发者社区</small></span></a>
-  <nav class="desktop-nav" aria-label="主导航">
-    <th:block th:if="${theme.config.home?.use_primary_menu == true}" th:with="menu=${menuFinder.getPrimary()}"><th:block th:if="${menu != null}"><th:block th:replace="~{modules/ui :: menu(${menu.menuItems})}"/></th:block></th:block>
-    <th:block th:unless="${theme.config.home?.use_primary_menu == true}"><a href="/">发现</a><a th:href="@{${site.routes.categoriesUri}}">技术专题</a><a th:href="@{${site.routes.archivesUri}}">文章归档</a><a th:href="@{${site.routes.tagsUri}}">标签</a><a th:if="${pluginFinder.available('PluginMoments')}" href="/moments">瞬间</a></th:block>
-  </nav>
+<header class="site-header" th:with="primaryMenu=${theme.config.home?.use_primary_menu != false ? menuFinder.getPrimary() : null}"><div class="shell header-inner">
+  <th:block th:replace="~{modules/site :: brand(true)}"/>
+  <nav class="desktop-nav" aria-label="主导航"><th:block th:replace="~{modules/site :: navigation(${primaryMenu})}"/></nav>
   <div class="header-actions"><button class="search-button" th:if="${pluginFinder.available('PluginSearchWidget')}" data-search aria-label="搜索文章"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>搜索内容</span><kbd>⌘ K</kbd></button><button class="icon-button" data-theme-toggle aria-label="切换深色模式" title="切换明暗模式">◐</button><button class="icon-button mobile-toggle" data-menu-toggle aria-label="展开导航" aria-expanded="false" aria-controls="mobile-nav">☰</button></div>
-</div><nav id="mobile-nav" class="mobile-nav shell" aria-label="移动导航" hidden><a href="/">发现</a><a th:href="@{${site.routes.categoriesUri}}">技术专题</a><a th:href="@{${site.routes.archivesUri}}">文章归档</a><a th:href="@{${site.routes.tagsUri}}">标签</a><a th:if="${pluginFinder.available('PluginMoments')}" href="/moments">瞬间</a><th:block th:if="${theme.config.home?.use_primary_menu == true}" th:with="menu=${menuFinder.getPrimary()}"><th:block th:if="${menu != null}"><th:block th:replace="~{modules/ui :: menu(${menu.menuItems})}"/></th:block></th:block></nav></header>
+</div><nav id="mobile-nav" class="mobile-nav shell" aria-label="移动导航" hidden><th:block th:replace="~{modules/site :: navigation(${primaryMenu})}"/></nav></header>
 <main id="main" class="shell"><th:block th:replace="${content}"/></main>
 <footer class="site-footer">
   <div class="shell footer-top">
     <div class="footer-brand">
-      <a class="brand" href="/"><img th:src="@{/assets/logo.svg}" alt="" width="32" height="32"><span>SpringForAll</span></a>
-      <p th:text="${theme.config.footer?.tagline ?: '连接开发者，让好技术被更多人看见。'}"></p>
+      <th:block th:replace="~{modules/site :: brand(false)}"/>
+      <th:block th:with="tagline=${theme.config.footer?.tagline ?: site.subtitle}"><p th:if="${not #strings.isEmpty(tagline)}" th:text="${tagline}"></p></th:block>
     </div>
     <nav class="footer-column" aria-label="页脚内容导航">
       <h2>探索内容</h2>
-      <a th:href="@{${site.routes.categoriesUri}}">技术专题</a>
+      <a th:href="@{${site.routes.categoriesUri}}">分类</a>
       <a th:href="@{${site.routes.archivesUri}}">文章归档</a>
       <a th:href="@{${site.routes.tagsUri}}">全部标签</a>
     </nav>
   </div>
-  <nav class="shell footer-network" aria-label="友情链接" th:if="${theme.config.footer?.show_network != false}">
-    <h2>友情链接</h2>
-    <div class="footer-friends">
-      <a th:href="${theme.config.footer?.community_url ?: 'https://spring4all.com/'}" target="_blank" rel="noopener" th:text="${theme.config.footer?.community_name ?: 'SpringForAll 社区'}"></a>
-      <a th:href="${theme.config.footer?.dd_url ?: 'https://didispace.com/'}" target="_blank" rel="noopener" th:text="${theme.config.footer?.dd_name ?: '程序猿DD'}"></a>
-      <a th:href="${theme.config.footer?.openwrite_url ?: 'https://openwrite.cn/'}" target="_blank" rel="noopener" th:text="${theme.config.footer?.openwrite_name ?: 'OpenWrite'}"></a>
-      <a th:href="${theme.config.footer?.fastgoing_url ?: 'https://fastgoing.org/'}" target="_blank" rel="noopener" th:text="${theme.config.footer?.fastgoing_name ?: 'FastGoing'}"></a>
-      <a th:href="${theme.config.footer?.soloent_url ?: 'https://soloent.cn/'}" target="_blank" rel="noopener" th:text="${theme.config.footer?.soloent_name ?: '灵蟹创作'}"></a>
-    </div>
-  </nav>
+  <th:block th:replace="~{modules/footer-links :: network}"/>
   <div class="shell footer-bottom">
     <span>© <span th:text="${#dates.format(#dates.createNow(),'yyyy')}"></span> <span th:text="${site.title}"></span></span>
     <a th:if="${not #strings.isEmpty(theme.config.footer?.icp)}" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" th:text="${theme.config.footer.icp}"></a>
-    <span class="footer-credits"><th:block th:if="${theme.config.footer?.show_credit != false}"><a th:href="${theme.config.footer?.theme_url ?: 'https://spring4all.com/'}" target="_blank" rel="noopener">春野主题</a><span> · </span><a th:href="${theme.config.footer?.community_url ?: 'https://spring4all.com/'}" target="_blank" rel="noopener">SpringForAll 出品</a><span class="credit-divider"> / </span></th:block>Powered by <a href="https://halo.run" target="_blank" rel="noopener">Halo</a></span>
+    <span class="footer-credits"><th:block th:if="${theme.config.footer?.show_credit != false}"><a th:href="${theme.config.footer?.theme_url ?: 'https://spring4all.com/'}" target="_blank" rel="noopener">春野主题</a><span> · </span><a th:href="${theme.spec.author.website}" target="_blank" rel="noopener" th:text="|${theme.spec.author.name} 出品|"></a><span class="credit-divider"> / </span></th:block>Powered by <a href="https://halo.run" target="_blank" rel="noopener">Halo</a></span>
   </div>
 </footer>
 <button class="back-top" data-back-top aria-label="回到顶部" hidden>↑</button><div class="toast" role="status" aria-live="polite" hidden></div>

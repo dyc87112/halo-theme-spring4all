@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<th:block th:fragment="network" th:with="footer=${theme.config.footer},source=${footer?.links_source == 'plugin' ? 'plugin' : 'custom'},custom=${footer?.links},validCustom=${custom != null ? custom.?[#this['enabled'] != false and #this['name'] != null and not #this['name'].isBlank() and #this['url'] != null and (#this['url'].startsWith('https://') or #this['url'].startsWith('http://'))] : null}">
+  <th:block th:if="${footer?.show_network != false}">
+    <th:block th:if="${source == 'custom'}">
+      <nav class="shell footer-network" aria-label="友情链接" th:if="${not #lists.isEmpty(validCustom)}"><h2>友情链接</h2><div class="footer-friends"><a th:each="link : ${validCustom}" th:href="${link['url']}" th:text="${link['name']}" target="_blank" rel="noopener"></a></div></nav>
+    </th:block>
+    <th:block th:if="${source == 'plugin'}">
+      <th:block th:if="${pluginFinder.available('PluginLinks') and not #lists.isEmpty(footer?.plugin_links)}">
+        <th:block th:with="selectedLinks=${footer.plugin_links},groups=${linkFinder.groupBy()}">
+          <th:block th:with="visibleGroups=${groups.?[links != null and not links.?[#lists.contains(#root.selectedLinks, metadata.name) and spec.displayName != null and not spec.displayName.isBlank() and spec.url != null and (spec.url.startsWith('https://') or spec.url.startsWith('http://'))].isEmpty()]}">
+            <nav class="shell footer-network" aria-label="友情链接" th:if="${not #lists.isEmpty(visibleGroups)}">
+              <h2>友情链接</h2>
+              <div class="footer-friends">
+                <th:block th:each="group : ${visibleGroups}">
+                  <th:block th:with="visibleLinks=${group.links.?[#lists.contains(#root.selectedLinks, metadata.name) and spec.displayName != null and not spec.displayName.isBlank() and spec.url != null and (spec.url.startsWith('https://') or spec.url.startsWith('http://'))]}">
+                    <a th:each="link : ${visibleLinks}" th:href="${link.spec.url}" th:text="${link.spec.displayName}" target="_blank" rel="noopener"></a>
+                  </th:block>
+                </th:block>
+              </div>
+            </nav>
+          </th:block>
+        </th:block>
+      </th:block>
+    </th:block>
+  </th:block>
+</th:block>
+</html>

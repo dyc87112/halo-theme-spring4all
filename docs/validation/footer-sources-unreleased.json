@@ -1,0 +1,48 @@
+{
+  "status": "unreleased",
+  "version": "1.0.5",
+  "sources": [
+    "custom",
+    "plugin"
+  ],
+  "checks": [
+    {
+      "source": "custom",
+      "items": 0,
+      "region_visible": false,
+      "passed": true
+    },
+    {
+      "source": "custom",
+      "items": 1,
+      "region_visible": true,
+      "passed": true
+    },
+    {
+      "source": "custom",
+      "items": 1,
+      "region_visible": false,
+      "passed": true
+    },
+    {
+      "source": "plugin",
+      "items": 0,
+      "region_visible": false,
+      "passed": true
+    },
+    {
+      "source": "auto",
+      "items": 0,
+      "region_visible": false,
+      "passed": true
+    }
+  ],
+  "advertising_config_unchanged": true,
+  "old_local_friend_keys_removed": true,
+  "local_backup": true,
+  "packaged_or_published": false,
+  "console_options_verified": [
+    "自定义列表",
+    "Halo 链接管理插件"
+  ]
+}

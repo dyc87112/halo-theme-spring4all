@@ -21,8 +21,9 @@ spec:
           value: 从 Java 与 Spring，到 AI 与开源。分享经得起实践的知识，和认真做技术的人一起成长。
         - $formkit: checkbox
           name: use_primary_menu
-          label: 使用 Halo 主菜单（关闭则使用主题内置导航）
-          value: false
+          label: 使用 Halo 主菜单（无菜单时显示基础导航）
+          help: 桌面与手机共用同一菜单；关闭时使用主题基础导航。
+          value: true
         - $formkit: checkbox
           name: show_featured
           label: 显示首页焦点文章
@@ -32,56 +33,67 @@ spec:
       formSchema:
         - $formkit: text
           name: tagline
-          label: 社区介绍
-          value: 连接开发者，让好技术被更多人看见。
+          label: 页脚介绍
+          help: 留空时使用 Halo 站点副标题。
+          value: ""
         - $formkit: text
           name: icp
           label: ICP 备案号（请按实际备案填写）
-          value: 沪ICP备17049000号-1
+          value: ""
         - $formkit: checkbox
           name: show_network
-          label: 显示品牌站点链接
+          label: 显示友情链接
           value: true
-        - $formkit: text
-          name: community_name
-          label: 社区入口名称
-          value: SpringForAll 社区
-        - $formkit: url
-          name: community_url
-          label: 社区完整网址
-          value: https://spring4all.com/
-        - $formkit: text
-          name: dd_name
-          label: 程序猿DD 入口名称
-          value: 程序猿DD
-        - $formkit: url
-          name: dd_url
-          label: 程序猿DD 完整网址
-          value: https://didispace.com/
-        - $formkit: text
-          name: openwrite_name
-          label: OpenWrite 入口名称
-          value: OpenWrite
-        - $formkit: url
-          name: openwrite_url
-          label: OpenWrite 完整网址
-          value: https://openwrite.cn/
-        - $formkit: text
-          name: fastgoing_name
-          label: FastGoing 入口名称
-          value: FastGoing
-        - $formkit: url
-          name: fastgoing_url
-          label: FastGoing 完整网址
-          value: https://fastgoing.org/
-        - $formkit: text
-          name: soloent_name
-          label: 灵蟹创作 入口名称
-          value: 灵蟹创作
-        - $formkit: url
-          name: soloent_url
-          label: 灵蟹创作 完整网址
-          value: https://soloent.cn/
+        - $formkit: select
+          name: links_source
+          id: footer-links-source
+          label: 友情链接来源
+          value: custom
+          help: 自定义列表由主题管理；插件模式从链接插件中勾选要展示的友链。
+          options:
+            - label: 自定义列表
+              value: custom
+            - label: Halo 链接管理插件
+              value: plugin
+        - $formkit: array
+          key: footer-custom-links
+          if: "$get('footer-links-source').value === 'custom'"
+          keep: true
+          name: links
+          label: 自定义友情链接
+          value: []
+          min: 0
+          addLabel: 添加友情链接
+          emptyText: 尚未添加友情链接
+          help: 支持增删、排序和逐条停用；网址填写完整的 http:// 或 https:// 地址。
+          itemLabels:
+            - type: text
+              label: $value.name
+            - type: text
+              label: $value.url
+          children:
+            - $formkit: text
+              name: name
+              label: 名称
+              value: ""
+              validation: required
+            - $formkit: url
+              name: url
+              label: 网址
+              value: ""
+              validation: required|url
+            - $formkit: checkbox
+              name: enabled
+              label: 显示此链接
+              value: true
+        - $cmp: Spring4allPluginLinksField
+          key: footer-plugin-links
+          if: "$get('footer-links-source').value === 'plugin'"
+          keep: true
+          name: plugin_links
+          label: 选择插件友情链接
+          value: []
+          help: 只展示勾选的链接；未选择时隐藏页脚友链区。
         - $formkit: checkbox
           name: show_credit
           label: 显示主题出品署名

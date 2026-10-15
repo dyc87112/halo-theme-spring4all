@@ -1,0 +1,119 @@
+{
+  "status": "unreleased",
+  "version": "1.0.5",
+  "checks": [
+    {
+      "case": "legacy five friends retained",
+      "passed": true
+    },
+    {
+      "case": "shared system title in header and footer",
+      "passed": true
+    },
+    {
+      "case": "Halo menu including child shared without duplicates",
+      "passed": true
+    },
+    {
+      "case": "custom list order, disabled and invalid links",
+      "passed": true
+    },
+    {
+      "case": "explicit empty custom hides region despite old fields",
+      "passed": true
+    },
+    {
+      "case": "missing links plugin safe fallback",
+      "passed": true
+    },
+    {
+      "case": "automatic source retains old links",
+      "passed": true
+    },
+    {
+      "case": "friend master switch hides all sources",
+      "passed": true
+    },
+    {
+      "case": "fresh neutral site title and subtitle from Halo",
+      "passed": true
+    },
+    {
+      "case": "same system logo in header and footer",
+      "passed": true
+    },
+    {
+      "case": "fresh footer has no default friends or ICP",
+      "passed": true
+    },
+    {
+      "case": "fresh install defaults to Halo primary menu",
+      "passed": true
+    },
+    {
+      "case": "no logo uses site initial and empty subtitle hidden",
+      "passed": true
+    },
+    {
+      "case": "empty primary menu falls back on desktop and mobile",
+      "passed": true
+    },
+    {
+      "case": "original theme, advertising and basic settings restored",
+      "passed": true
+    },
+    {
+      "case": "real PluginLinks 2.5.0 grouped and ungrouped data",
+      "passed": true
+    },
+    {
+      "case": "disabled plugin does not invoke finder or show region",
+      "passed": true
+    },
+    {
+      "case": "temporary plugin data removed and original config restored",
+      "passed": true
+    },
+    {
+      "case": "Console array add/edit/delete/drag-sort",
+      "passed": true
+    },
+    {
+      "case": "Console save retains legacy links and all advertising settings",
+      "passed": true
+    },
+    {
+      "case": "disabled custom item saved and hides empty region",
+      "passed": true
+    },
+    {
+      "case": "390px long title: brand/buttons separated, document width 390px",
+      "passed": true
+    },
+    {
+      "case": "1280px long title: brand/menu separated, document width 1280px",
+      "passed": true
+    },
+    {
+      "case": "mobile menu opens with same items as desktop",
+      "passed": true
+    },
+    {
+      "case": "server Setting defaults: primary menu true, ICP and legacy friends empty, custom array empty",
+      "passed": true
+    },
+    {
+      "case": "six local routes return 200 with original brand and links",
+      "passed": true
+    },
+    {
+      "case": "all original system/theme/advertising settings restored, temporary plugin absent",
+      "passed": true
+    },
+    {
+      "case": "local preview recovered after H2 channel interruption; full response reads pass",
+      "passed": true
+    }
+  ],
+  "scope": "Local Halo only. Original settings restored; no packaging, publishing or production changes."
+}
