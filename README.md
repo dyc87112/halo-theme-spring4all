@@ -1,6 +1,6 @@
 # halo-theme-spring4all · 春野
 
-为 SpringForAll 社区制作的独立 Halo 主题，当前版本 1.0.6。
+为 SpringForAll 社区制作的独立 Halo 主题，当前开发版本 1.1.0（未发布），最新正式版本为 1.0.6。
 
 采用 Spring 绿、石墨色和暖白底色，使用编辑型首页、轻量文章列表与独立阅读布局。历史文章没有封面时自动显示与分类匹配的视觉占位。前台为 Thymeleaf + CSS + 原生 JavaScript；后台友链选择组件使用 Halo 共享的 Vue/FormKit 运行时。主题附带已编译的后台资源，安装使用无需 Node。
 
@@ -20,7 +20,7 @@ compose.yaml                  本地 Halo 预览配置
 dist/                         生成的安装包（Git 忽略）
 ```
 
-日常开发只修改源码并验证，更新说明归入“未发布”。只有维护者明确要求打包时才生成安装包，明确要求发版时才创建标签 / GitHub Release。当前版本为 `1.0.6`，后续开发改动归入“未发布”。
+日常开发只修改源码并验证，更新说明归入“未发布”。只有维护者明确要求打包时才生成安装包，明确要求发版时才创建标签 / GitHub Release。当前开发版本为 `1.1.0`（未发布），正式版本为 `1.0.6`。
 
 经明确授权后执行打包：
 
@@ -29,6 +29,10 @@ python3 scripts/package.py
 ```
 
 安装包自动读取 `theme.yaml` 的名称和版本，生成到 `dist/`，仅包含主题运行文件、说明和许可证。
+
+## 1.1.0 开发中
+
+尚无新增改动，后续功能与修复记录在此。
 
 ## 1.0.6 更新
 
@@ -98,6 +102,8 @@ python3 scripts/package.py
 - 更新静态资源版本，避免旧 CSS 缓存。
 
 ## 安装
+
+[下载 1.0.6 正式版安装包](https://github.com/dyc87112/halo-theme-spring4all/releases/download/v1.0.6/theme-spring4all-1.0.6.zip)。主分支为 1.1.0 开发版本。
 
 1. Halo Console → 主题 → 安装主题，上传 `theme-spring4all-1.0.6.zip`。
 2. 在主题列表选择 **Spring4All · 春野**，打开预览检查内容。
@@ -188,7 +194,7 @@ docker compose stop
 
 修改后台组件后，在 `ui-plugin/` 中执行 `npm ci` 和 `npm run build`，然后重载主题并完整刷新 Console。`ui-plugin/dist/` 是必须随主题提供的运行资源，源码和依赖不进入安装包。
 
-修改 `templates/` 后在开发 Halo 中关闭 Thymeleaf 缓存即可预览；修改 theme.yaml 或 settings.yaml 后，在 Console 中重载主题配置。当前版本为 1.0.6；后续打包或发布仍需维护者明确指令，不自动发版。
+修改 `templates/` 后在开发 Halo 中关闭 Thymeleaf 缓存即可预览；修改 theme.yaml 或 settings.yaml 后，在 Console 中重载主题配置。当前开发版本为 1.1.0（未发布）；后续打包或发布仍需维护者明确指令，不自动发版。
 
 已检查 14 个路径/状态：正常内容页返回 200，缺失页面返回 404；正常列表不显示空状态，空分类显示空状态。搜索插件可查询实际文章；已验证标签筛选、明暗切换、移动菜单及代码复制。已验证搜索和瞬间插件停用时首页仍正常，恢复插件后入口可用。
 
